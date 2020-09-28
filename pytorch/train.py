@@ -1,6 +1,6 @@
 # coding=utf-8
-import pickle # pickle提供了一个简单的持久化功能.可以将对象以文件的形式存放在磁盘上,python中几乎所有的数据类型(列表,字典,集合,类等)都可以用pickle来序列化,序列化后的数据,可读性差,人一般无法识别
-import pdb # python debugger 是用来调试程序的
+import pickle 
+import pdb 
 with open('../data/renmindata.pkl', 'rb') as inp:
 	word2id = pickle.load(inp)  # pickle.load(file)反序列化对象.将文件中的数据解析为一个Python对象.
 	id2word = pickle.load(inp)
